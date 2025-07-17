@@ -9,6 +9,7 @@ const Navbar = () => {
        <li>kishor</li>
        <li>mausam</li> 
        <li>god is sleeping</li>
+       <li>now good is waking up</li>
       </ul>
     </nav>
   );
