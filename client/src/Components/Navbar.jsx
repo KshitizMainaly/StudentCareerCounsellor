@@ -8,6 +8,8 @@ const Navbar = () => {
        <li>kshitiz</li>
        <li>kishor</li>
        <li>mausam</li> 
+       <li>Biplaw</li>
+        <li> kishor tme kati fatai manxe xau yrr badmas manxa</li >
       </ul>
     </nav>
   );
