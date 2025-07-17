@@ -10,6 +10,7 @@ const Navbar = () => {
        <li>mausam</li> 
        <li>Biplaw</li>
         <li> kishor tme kati fatai manxe xau yrr badmas manxa</li >
+      <li>hello bro</li>
       </ul>
     </nav>
   );
