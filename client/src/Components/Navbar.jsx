@@ -9,6 +9,8 @@ const Navbar = () => {
        <li>kishor</li>
        <li>mausam</li> 
        <li>god is sleeping</li>
+       <li> weather is fucking very hot</li>
+       <li>weather is indeed sexy</li>
       </ul>
     </nav>
   );
