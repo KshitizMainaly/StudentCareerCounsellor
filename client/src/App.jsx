@@ -7,6 +7,7 @@ const App = () => {
 <Navbar/>
 
 <h1>hello kshitiz</h1>
+<h2>mausam</h2>
 
     </>
   )
