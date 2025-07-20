@@ -1,8 +1,8 @@
 
 import { useLanguage } from '../hooks/useLanguage';
 
-const Hero = () => {
-  const { t, language } = useLanguage();
+const Hero = ({ language, setLanguage }) => {
+  const { t } = useLanguage(language, setLanguage);
   
   return (
     <section className="relative py-20 overflow-hidden">

@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../hooks/useLanguage';
 
-const UserTypeSelector = ({ language }) => {
-  const { t } = useLanguage();
+const UserTypeSelector = ({ language, setLanguage }) => {
+  const { t } = useLanguage(language, setLanguage);
   
   const userTypes = [
     {

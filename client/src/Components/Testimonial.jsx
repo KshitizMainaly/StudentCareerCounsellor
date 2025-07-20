@@ -1,8 +1,8 @@
 // src/components/Testimonials.jsx
 import { useLanguage } from '../hooks/useLanguage';
 
-const Testimonials = () => {
-  const { t } = useLanguage();
+const Testimonials = ({ language, setLanguage }) => {
+  const { t } = useLanguage(language, setLanguage);
   
   return (
     <section className="py-16 bg-white">

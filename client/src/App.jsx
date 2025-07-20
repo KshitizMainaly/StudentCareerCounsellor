@@ -9,32 +9,31 @@ import Footer from './Components/Footer';
 import Login from './Components/Login';
 import Register from './Components/Register';
 
-function Layout() {
-  const [language, setLanguage] = useState('en');
-  
+function Layout({ language, setLanguage }) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50">
       <Navbar language={language} setLanguage={setLanguage} />
       <Outlet />
-      <Footer language={language} />
+      <Footer language={language} setLanguage={setLanguage} />
     </div>
   );
 }
 
 function App() {
+  const [language, setLanguage] = useState('en');
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path="/" element={<Layout language={language} setLanguage={setLanguage} /> }>
         <Route index element={
           <>
-            <Hero />
-            <UserTypeSelector />
-            <Features />
-            <Testimonials />
+            <Hero language={language} setLanguage={setLanguage} />
+            <UserTypeSelector language={language} setLanguage={setLanguage} />
+            <Features language={language} setLanguage={setLanguage} />
+            <Testimonials language={language} setLanguage={setLanguage} />
           </>
         } />
-        <Route path="login" element={<Login />} />
-        <Route path="register/:userType" element={<Register />} />
+        <Route path="login" element={<Login language={language} setLanguage={setLanguage} />} />
+        <Route path="register/:userType" element={<Register language={language} setLanguage={setLanguage} />} />
       </Route>
     </Routes>
   );

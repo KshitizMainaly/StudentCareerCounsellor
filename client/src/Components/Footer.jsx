@@ -1,7 +1,7 @@
 import { useLanguage } from '../hooks/useLanguage';
 
-const Footer = ({ language }) => {
-  const { t } = useLanguage();
+const Footer = ({ language, setLanguage }) => {
+  const { t } = useLanguage(language, setLanguage);
   
   return (
     <footer className="bg-gray-900 text-white pt-12 pb-8">

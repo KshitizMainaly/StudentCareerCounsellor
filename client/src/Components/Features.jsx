@@ -1,8 +1,8 @@
 // src/components/Features.jsx
 import { useLanguage } from '../hooks/useLanguage';
 
-const Features = () => {
-  const { t, language } = useLanguage();
+const Features = ({ language, setLanguage }) => {
+  const { t } = useLanguage(language, setLanguage);
   
   return (
     <section className="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
