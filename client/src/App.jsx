@@ -5,7 +5,6 @@ const App = () => {
   return (
     <>
 <Navbar/>
-
 <h1>hello kshitiz</h1>
 
     </>
